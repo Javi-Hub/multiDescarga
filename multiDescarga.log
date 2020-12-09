@@ -1,0 +1,448 @@
+10:50:42.857 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+10:50:50.917 [Thread-3] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) iniciada
+10:51:04.344 [Thread-4] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) iniciada
+10:51:06.794 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+10:51:06.797 [Thread-4] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) cancelada
+10:51:11.569 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+11:01:33.886 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (asdfsdf) creada
+11:01:37.340 [JavaFX Application Thread] ERROR com.sanvalero.multiDescarga.DownloadController - URL mal formada
+java.net.MalformedURLException: no protocol: asdfsdf
+	at com.sanvalero.multiDescarga.DownloadController.start(DownloadController.java:109) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at com.sun.javafx.reflect.Trampoline.invoke(MethodUtil.java:76) ~[javafx-base-11.0.2-win.jar:?]
+	at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at com.sun.javafx.reflect.MethodUtil.invoke(MethodUtil.java:273) ~[javafx-base-11.0.2-win.jar:?]
+	at com.sun.javafx.fxml.MethodHelper.invoke(MethodHelper.java:83) ~[javafx-fxml-14-win.jar:?]
+	at javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1782) ~[javafx-fxml-14-win.jar:?]
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1670) ~[javafx-fxml-14-win.jar:?]
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86) ~[javafx-base-11.0.2-win.jar:?]
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238) ~[javafx-base-11.0.2-win.jar:?]
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191) ~[javafx-base-11.0.2-win.jar:?]
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59) ~[javafx-base-11.0.2-win.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58) ~[javafx-base-11.0.2-win.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[javafx-base-11.0.2-win.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) ~[javafx-base-11.0.2-win.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[javafx-base-11.0.2-win.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) ~[javafx-base-11.0.2-win.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[javafx-base-11.0.2-win.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) ~[javafx-base-11.0.2-win.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[javafx-base-11.0.2-win.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) ~[javafx-base-11.0.2-win.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[javafx-base-11.0.2-win.jar:?]
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74) ~[javafx-base-11.0.2-win.jar:?]
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49) ~[javafx-base-11.0.2-win.jar:?]
+	at javafx.event.Event.fireEvent(Event.java:198) ~[javafx-base-11.0.2-win.jar:?]
+	at javafx.scene.Node.fireEvent(Node.java:8885) ~[javafx-graphics-14-win.jar:?]
+	at javafx.scene.control.Button.fire(Button.java:203) ~[javafx-controls-14-win.jar:?]
+	at com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:206) ~[javafx-controls-14-win.jar:?]
+	at com.sun.javafx.scene.control.inputmap.InputMap.handle(InputMap.java:274) ~[javafx-controls-14-win.jar:?]
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:218) ~[javafx-base-11.0.2-win.jar:?]
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80) ~[javafx-base-11.0.2-win.jar:?]
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238) ~[javafx-base-11.0.2-win.jar:?]
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191) ~[javafx-base-11.0.2-win.jar:?]
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59) ~[javafx-base-11.0.2-win.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58) ~[javafx-base-11.0.2-win.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[javafx-base-11.0.2-win.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) ~[javafx-base-11.0.2-win.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[javafx-base-11.0.2-win.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) ~[javafx-base-11.0.2-win.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[javafx-base-11.0.2-win.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) ~[javafx-base-11.0.2-win.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[javafx-base-11.0.2-win.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) ~[javafx-base-11.0.2-win.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[javafx-base-11.0.2-win.jar:?]
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74) ~[javafx-base-11.0.2-win.jar:?]
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54) ~[javafx-base-11.0.2-win.jar:?]
+	at javafx.event.Event.fireEvent(Event.java:198) ~[javafx-base-11.0.2-win.jar:?]
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3890) ~[javafx-graphics-14-win.jar:?]
+	at javafx.scene.Scene.processMouseEvent(Scene.java:1885) ~[javafx-graphics-14-win.jar:?]
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2618) ~[javafx-graphics-14-win.jar:?]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:409) ~[javafx-graphics-14-win.jar:?]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:299) ~[javafx-graphics-14-win.jar:?]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:?]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:447) ~[javafx-graphics-14-win.jar:?]
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:412) ~[javafx-graphics-14-win.jar:?]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:446) ~[javafx-graphics-14-win.jar:?]
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:556) ~[javafx-graphics-14-win.jar:?]
+	at com.sun.glass.ui.View.notifyMouse(View.java:942) ~[javafx-graphics-14-win.jar:?]
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method) ~[javafx-graphics-14-win.jar:?]
+	at com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:174) ~[javafx-graphics-14-win.jar:?]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+11:01:42.658 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (asdfsdf) detenida
+12:08:42.573 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:08:49.796 [Thread-3] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) iniciada
+12:08:59.582 [Thread-4] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) iniciada
+12:09:02.827 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:09:02.829 [Thread-4] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) cancelada
+12:09:03.984 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:14:18.726 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:14:18.741 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:14:18.751 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:14:18.760 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:14:18.768 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:15:14.435 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:15:14.450 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:15:14.460 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:15:14.468 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:15:14.477 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:15:23.198 [Thread-3] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) iniciada
+12:15:28.017 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:17:19.041 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:17:19.056 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:17:19.065 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:17:19.074 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:17:19.082 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:17:33.200 [Thread-3] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) iniciada
+12:17:36.725 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:17:36.736 [Thread-3] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) cancelada
+12:17:39.281 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:17:39.281 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:18:00.807 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:18:00.818 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:18:00.826 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:18:00.833 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:18:00.839 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:18:05.122 [Thread-4] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) iniciada
+12:18:09.026 [Thread-5] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) iniciada
+12:18:12.370 [Thread-6] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) iniciada
+12:18:15.874 [Thread-7] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) iniciada
+12:18:21.619 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:18:21.619 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:18:24.625 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:18:24.625 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:18:28.226 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:18:28.229 [Thread-7] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) cancelada
+12:18:29.660 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:18:29.661 [Thread-6] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) cancelada
+12:18:30.913 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:18:30.917 [Thread-5] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) cancelada
+12:18:32.353 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:18:32.353 [Thread-4] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) cancelada
+12:19:19.678 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:19:45.567 [Thread-3] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) iniciada
+12:19:55.763 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:20:01.667 [Thread-4] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) iniciada
+12:20:09.466 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:20:14.891 [Thread-5] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) iniciada
+12:20:18.470 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:20:18.470 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:20:18.471 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:20:18.474 [Thread-4] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) cancelada
+12:20:18.483 [Thread-5] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) cancelada
+12:21:48.073 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:21:48.088 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:21:48.098 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:21:48.107 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:21:48.116 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:21:56.855 [Thread-3] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) iniciada
+12:22:00.339 [Thread-4] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) iniciada
+12:22:03.525 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:22:03.526 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:22:03.526 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:22:03.533 [Thread-3] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) cancelada
+12:22:03.534 [Thread-4] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) cancelada
+12:22:15.887 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:22:15.895 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:22:15.902 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:22:15.909 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:22:15.915 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:22:17.906 [Thread-5] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) iniciada
+12:22:20.418 [Thread-6] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) iniciada
+12:22:23.095 [Thread-7] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) iniciada
+12:22:25.683 [Thread-8] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) iniciada
+12:22:30.135 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:22:30.135 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:22:30.136 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:22:32.320 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:22:32.320 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:22:32.321 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:22:35.842 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:22:35.843 [Thread-5] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) cancelada
+12:22:37.010 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:22:37.012 [Thread-6] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) cancelada
+12:22:38.743 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:22:38.750 [Thread-7] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) cancelada
+12:22:40.027 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:22:40.028 [Thread-8] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) cancelada
+12:32:36.032 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:32:39.731 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:32:55.680 [Thread-3] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) iniciada
+12:32:59.068 [Thread-4] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) iniciada
+12:33:02.668 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:33:02.669 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:33:02.669 [Thread-3] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) cancelada
+12:33:02.670 [Thread-4] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) cancelada
+12:34:07.472 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:34:07.481 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:34:12.388 [Thread-5] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) iniciada
+12:34:13.947 [Thread-6] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) iniciada
+12:34:18.515 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:34:18.515 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:34:18.515 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:34:18.516 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:34:18.520 [Thread-5] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) cancelada
+12:34:18.520 [Thread-6] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) cancelada
+12:34:33.460 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:34:37.164 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:34:38.356 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:34:39.868 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:34:41.020 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:34:49.716 [Thread-7] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) iniciada
+12:34:52.545 [Thread-8] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) iniciada
+12:34:55.665 [Thread-9] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) iniciada
+12:34:59.036 [Thread-10] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) iniciada
+12:35:01.516 [Thread-11] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) iniciada
+12:35:06.715 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:35:06.716 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:35:06.716 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:35:06.716 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:35:06.716 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:35:06.716 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:35:06.716 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:35:06.716 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:35:06.717 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:35:06.768 [Thread-8] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) cancelada
+12:35:06.781 [Thread-11] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) cancelada
+12:35:06.781 [Thread-7] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) cancelada
+12:35:06.785 [Thread-10] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) cancelada
+12:35:06.962 [Thread-9] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) cancelada
+12:35:59.343 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:35:59.352 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:35:59.358 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:35:59.366 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:35:59.372 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:35:59.379 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:36:07.116 [Thread-12] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) iniciada
+12:36:08.868 [Thread-13] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) iniciada
+12:36:11.812 [Thread-14] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) iniciada
+12:36:14.236 [Thread-15] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) iniciada
+12:36:16.764 [Thread-16] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) iniciada
+12:36:19.668 [Thread-17] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) iniciada
+12:36:24.820 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:36:24.820 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:36:24.820 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:36:24.820 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:36:24.820 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:36:24.820 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:36:24.821 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:36:24.821 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:36:24.821 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:36:24.821 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:36:24.821 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:36:24.821 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:36:24.821 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:36:24.821 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:36:24.821 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:36:24.829 [Thread-17] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) cancelada
+12:36:24.829 [Thread-16] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) cancelada
+12:36:24.829 [Thread-14] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) cancelada
+12:36:24.844 [Thread-15] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) cancelada
+12:36:24.847 [Thread-12] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) cancelada
+12:36:24.848 [Thread-13] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) cancelada
+12:38:53.216 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:38:53.233 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:38:53.243 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:38:53.252 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:38:53.261 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:38:53.268 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:39:03.136 [Thread-3] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) iniciada
+12:39:22.434 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:39:22.442 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:39:22.449 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:39:22.456 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:39:22.462 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:39:22.471 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:39:25.452 [Thread-4] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) iniciada
+12:39:42.230 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:39:42.237 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:39:42.243 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:39:42.252 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:39:42.257 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:39:42.262 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:39:44.594 [Thread-5] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) iniciada
+12:39:47.228 [Thread-6] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) iniciada
+12:39:49.576 [Thread-7] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) iniciada
+12:39:51.788 [Thread-8] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) iniciada
+12:39:53.429 [Thread-9] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) iniciada
+12:39:58.204 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:39:58.204 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:40:03.900 [Thread-10] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) iniciada
+12:40:08.360 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:40:08.360 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:40:16.035 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:40:16.036 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:40:20.939 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:40:20.968 [Thread-10] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) cancelada
+12:40:21.612 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:40:21.617 [Thread-9] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) cancelada
+12:40:22.964 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:40:22.976 [Thread-8] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) cancelada
+12:40:24.243 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:40:24.273 [Thread-7] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) cancelada
+12:40:25.819 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:40:25.828 [Thread-6] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) cancelada
+12:40:27.803 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:40:27.805 [Thread-5] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) cancelada
+12:40:42.355 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:40:42.361 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:40:42.367 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:40:42.371 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:40:42.376 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:40:42.383 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:40:45.421 [Thread-11] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) iniciada
+12:40:47.685 [Thread-12] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) iniciada
+12:40:50.186 [Thread-13] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) iniciada
+12:40:52.405 [Thread-14] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) iniciada
+12:40:54.684 [Thread-15] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) iniciada
+12:40:56.459 [Thread-16] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) iniciada
+12:41:05.228 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:41:05.228 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:41:10.267 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:41:10.285 [Thread-16] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) cancelada
+12:41:11.228 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:41:11.230 [Thread-15] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) cancelada
+12:41:12.441 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:41:12.445 [Thread-14] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) cancelada
+12:41:13.580 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:41:13.587 [Thread-13] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) cancelada
+12:41:14.812 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:41:14.815 [Thread-12] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) cancelada
+12:41:16.268 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:41:16.273 [Thread-11] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) cancelada
+12:41:51.414 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:41:51.431 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:41:51.441 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:41:51.449 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:41:51.457 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:41:51.464 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:41:53.648 [Thread-3] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) iniciada
+12:41:55.677 [Thread-4] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) iniciada
+12:41:57.477 [Thread-5] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) iniciada
+12:42:00.213 [Thread-6] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) iniciada
+12:42:01.958 [Thread-7] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) iniciada
+12:42:03.927 [Thread-8] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) iniciada
+12:42:11.283 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:42:11.283 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:42:11.284 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:42:11.284 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:42:11.284 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:42:11.284 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:42:11.286 [Thread-4] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) cancelada
+12:42:11.288 [Thread-5] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) cancelada
+12:42:11.289 [Thread-6] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) cancelada
+12:42:11.290 [Thread-7] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) cancelada
+12:42:11.301 [Thread-3] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) cancelada
+12:42:11.301 [Thread-8] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) cancelada
+12:43:18.951 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:43:18.966 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:43:18.976 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:43:18.984 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:43:18.992 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:43:19.000 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:43:22.761 [Thread-3] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) iniciada
+12:43:24.892 [Thread-4] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) iniciada
+12:43:26.932 [Thread-5] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) iniciada
+12:43:29.597 [Thread-6] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) iniciada
+12:43:33.916 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:43:33.917 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:43:33.917 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:43:33.917 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:43:33.917 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:43:33.918 [Thread-6] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) cancelada
+12:43:33.922 [Thread-5] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) cancelada
+12:43:33.926 [Thread-4] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) cancelada
+12:43:33.926 [Thread-3] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) cancelada
+12:43:42.157 [Thread-7] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) iniciada
+12:43:45.111 [Thread-8] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) iniciada
+12:43:48.836 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:43:48.836 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:43:48.836 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:43:48.837 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:43:48.837 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:43:48.837 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:43:48.837 [Thread-7] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) cancelada
+12:43:48.838 [Thread-8] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) cancelada
+12:45:30.138 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:45:54.457 [Thread-3] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) iniciada
+12:45:58.878 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:46:07.533 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:46:16.989 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:46:18.165 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:46:23.093 [Thread-4] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) iniciada
+12:46:24.925 [Thread-5] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) iniciada
+12:46:28.024 [Thread-6] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) iniciada
+12:46:33.695 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:46:33.696 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:46:33.696 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:46:33.697 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:46:33.707 [Thread-5] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) cancelada
+12:46:33.707 [Thread-6] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) cancelada
+12:46:33.707 [Thread-4] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) cancelada
+12:46:42.405 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:46:44.397 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:46:45.629 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:46:48.365 [Thread-7] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) iniciada
+12:46:49.679 [Thread-8] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) iniciada
+12:46:54.383 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:46:54.383 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:46:54.383 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:46:54.383 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:46:54.383 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:46:54.383 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:46:54.384 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:46:54.389 [Thread-7] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) cancelada
+12:46:54.402 [Thread-8] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) cancelada
+12:50:44.262 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:50:49.461 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:50:52.538 [Thread-3] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) iniciada
+12:50:55.574 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:50:55.575 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:50:55.576 [Thread-3] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) cancelada
+12:51:03.278 [Thread-4] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) iniciada
+12:51:06.254 [Thread-5] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) iniciada
+12:51:08.525 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:51:08.525 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:51:08.527 [Thread-5] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) cancelada
+12:51:08.530 [Thread-4] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) cancelada
+12:54:03.889 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:54:05.693 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:54:15.169 [Thread-3] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) iniciada
+12:54:18.749 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:54:18.750 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:54:18.754 [Thread-3] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) cancelada
+12:54:25.518 [Thread-4] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) iniciada
+12:54:27.021 [Thread-5] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) iniciada
+12:54:35.013 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:54:35.013 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:54:35.013 [Thread-4] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) cancelada
+12:55:38.182 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:55:39.230 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:55:49.171 [Thread-3] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) iniciada
+12:55:53.957 [Thread-4] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) iniciada
+12:56:03.437 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:56:03.438 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:56:03.438 [Thread-4] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) cancelada
+12:56:06.406 [Thread-5] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) iniciada
+12:56:12.598 [Thread-6] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) iniciada
+12:56:15.653 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:56:15.654 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:56:15.657 [Thread-5] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) cancelada
+12:56:15.658 [Thread-6] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) cancelada
+12:58:36.829 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+12:58:37.997 [Thread-3] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) iniciada
+12:58:42.230 [Thread-4] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) iniciada
+12:58:46.795 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+12:58:46.799 [Thread-4] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) cancelada
+12:58:48.165 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+13:04:03.956 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+13:04:05.527 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) creada
+13:04:12.082 [Thread-3] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) iniciada
+13:04:16.393 [Thread-4] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) iniciada
+13:04:23.302 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+13:04:23.303 [JavaFX Application Thread] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) detenida
+13:04:23.311 [Thread-4] TRACE com.sanvalero.multiDescarga.DownloadController - Descarga (https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.9.13.tar.xz) cancelada
