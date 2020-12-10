@@ -1,4 +1,4 @@
-package com.sanvalero.multiDescarga;
+package com.sanvalero.multiDescarga.controller;
 
 import com.sanvalero.multiDescarga.domain.DownloadTask;
 import com.sanvalero.multiDescarga.util.AlertUtils;
@@ -59,12 +59,16 @@ public class DownloadController implements Initializable {
 
         try{
             if (!chSelectDir.isSelected() && directorio.equals("")){
+                LOGGER.warn("Directorio (" + directorio + ") no introducido");
                 AlertUtils.mostrarError("Debe seleccionar la ruta");
             } else if (tfNameFile.getText().equals("")){
+                LOGGER.warn("Nombre archivo no introducido");
                 AlertUtils.mostrarError("Debe asignar un nombre al archivo");
             } else if (!chSelectDir.isSelected()){
+                LOGGER.trace("Directorio (" + directorio + ") introducido");
                 file = new File(directorio + File.separator + tfNameFile.getText());
             } else if (chSelectDir.isSelected()){
+                LOGGER.trace("Direcotrio (" + directorio + ") todas las descargas");
                 FileChooser chooserFile = new FileChooser();
                 file = chooserFile.showSaveDialog(tfNameURL.getScene().getWindow());
             }
@@ -90,6 +94,7 @@ public class DownloadController implements Initializable {
             // Que tiene que hacer el metodo cuando cambie algo del DownloadTask
             downloadTask.stateProperty().addListener((observableValue, oldState, newState) -> {
                 if (newState == Worker.State.SUCCEEDED){
+                    LOGGER.trace("Alerta 'FIN DESCARGA' desplegada");
                     Alert alert = new Alert(Alert.AlertType.INFORMATION);
                     alert.setContentText("La descarga ha terminado");
                     alert.show();
@@ -110,7 +115,7 @@ public class DownloadController implements Initializable {
 
         } catch (MalformedURLException murle){
             murle.printStackTrace();
-            LOGGER.error("URL (" + urlText + ") mal formada", murle.fillInStackTrace());
+            LOGGER.error("URL (" + urlText + ") mal formada -->", murle.fillInStackTrace());
         }
 
     }

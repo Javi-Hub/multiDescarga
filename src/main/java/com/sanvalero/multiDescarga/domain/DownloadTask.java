@@ -1,12 +1,10 @@
 package com.sanvalero.multiDescarga.domain;
 
-import com.sanvalero.multiDescarga.DownloadController;
+import com.sanvalero.multiDescarga.controller.DownloadController;
 import javafx.concurrent.Task;
-import javafx.scene.layout.VBox;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.awt.image.LookupOp;
 import java.io.BufferedInputStream;
 import java.io.File;
 import java.io.FileOutputStream;
@@ -75,5 +73,4 @@ public class DownloadTask extends Task<Integer> {
 }
 
 // TODO Logger rotar por dia
-// TODO Poner loggers en la aplicación
 // TODO Diseño gráfico Aplicación

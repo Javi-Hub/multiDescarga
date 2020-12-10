@@ -1,4 +1,4 @@
-package com.sanvalero.multiDescarga;
+package com.sanvalero.multiDescarga.controller;
 
 import com.sanvalero.multiDescarga.util.AlertUtils;
 import com.sanvalero.multiDescarga.util.R;
@@ -11,11 +11,12 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.VBox;
 import javafx.stage.DirectoryChooser;
 import javafx.stage.FileChooser;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
-import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -31,6 +32,7 @@ public class AppController {
     public Label lbRoute;
 
     private List<DownloadController> downloads;
+    private static final Logger LOGGER = LogManager.getLogger(AppController.class);
     private int contador = 0;
 
     public AppController(){
@@ -40,25 +42,28 @@ public class AppController {
     @FXML
     public void launchDownload(ActionEvent event){
 
-            if (!tfNumDownloads.getText().equals("") && contador > Integer.parseInt(tfNumDownloads.getText())) {
-                AlertUtils.mostrarError("Límite de descargas superado");
-            }
             if (tfURL.getText().equals("")){
                 AlertUtils.mostrarError("Debe ingresar una url de descarga");
                 return;
             }
+
             String urlText = tfURL.getText();
             tfURL.clear();
             tfURL.requestFocus();
             launchDownload(urlText);
-
     }
 
     public void launchDownload(String url){
         try {
+            LOGGER.trace("Cargar descarga (" + contador + ")");
+            contador++;
+            if (!tfNumDownloads.getText().equals("") && contador > Integer.parseInt(tfNumDownloads.getText())) {
+                LOGGER.trace("Limite descargas superado --> (" + tfNumDownloads.getText() + ")");
+                AlertUtils.mostrarError("Límite de descargas superado. Descarga - " + contador + " cancelada.");
+                return;
+            }
             // Insertar en la ventana padre --> "multiDownload", las descargas que vaya
             //  añadiendo --> "download"
-            contador++;
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(R.getUI( "downloader.fxml"));
             DownloadController downloadController = new DownloadController(url, lbRoute.getText(), "Download - " + contador);
@@ -69,11 +74,13 @@ public class AppController {
 
         } catch (IOException ioe) {
             ioe.printStackTrace();
+            LOGGER.error("Error Entrada/Salida --> " + ioe.fillInStackTrace());
         }
     }
 
     @FXML
     public void stopAllDownloads(ActionEvent event){
+        LOGGER.trace("Parar todas las descargas --> (" + contador + ")");
         for (DownloadController downloadController : downloads){
                 downloadController.stop();
         }
@@ -81,12 +88,14 @@ public class AppController {
 
     @FXML
     public void clearDownloads(ActionEvent event){
+        LOGGER.trace("Borrar todas las descargas --> (" + contador + ")");
         vbPanelDownloader.getChildren().clear();
         contador = 0;
     }
 
     @FXML
     public void setRoute(ActionEvent event){
+        LOGGER.trace("Selección ruta todas las descargas (" + lbRoute.getText() + ")");
         DirectoryChooser directoryChooser = new DirectoryChooser();
         File fileDir = directoryChooser.showDialog(null);
         String dir = fileDir.getAbsolutePath();
@@ -95,6 +104,7 @@ public class AppController {
 
     @FXML
     public void readDLC(){
+        LOGGER.trace("Subir archivo urls");
         FileChooser fileChooser = new FileChooser();
         File file = fileChooser.showOpenDialog(null);
         try {
@@ -104,5 +114,6 @@ public class AppController {
             AlertUtils.mostrarError("No se ha podido cargar el archivo correctamente");
         }
     }
+
 
 }
