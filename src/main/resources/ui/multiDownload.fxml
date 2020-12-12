@@ -7,16 +7,19 @@
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<ScrollPane fx:id="spPanel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="524.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<ScrollPane fx:id="spPanel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="676.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <content>
-      <VBox fx:id="vbPanel" prefHeight="522.0" prefWidth="598.0">
+      <VBox fx:id="vbPanelParent" prefHeight="753.0" prefWidth="676.0" style="-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #283593, #32cd32);">
          <children>
-            <MenuBar prefHeight="43.0" prefWidth="578.0">
+            <MenuBar prefHeight="25.0" prefWidth="530.0">
               <menus>
                 <Menu mnemonicParsing="false" text="File">
                   <items>
@@ -24,81 +27,156 @@
                   </items>
                 </Menu>
               </menus>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
             </MenuBar>
-            <Label fx:id="lbTitulo" alignment="TOP_CENTER" text="Multi-Descarga" textAlignment="CENTER">
+            <Label fx:id="lbTitulo" alignment="TOP_CENTER" text="Multi-Descarga" textAlignment="CENTER" textFill="#f8f8f8">
                <font>
-                  <Font name="Calibri Bold" size="24.0" />
+                  <Font name="Gadugi Bold" size="24.0" />
                </font>
                <VBox.margin>
-                  <Insets left="200.0" />
-               </VBox.margin></Label>
+                  <Insets left="230.0" />
+               </VBox.margin>
+               <effect>
+                  <DropShadow color="#ffe3e3" />
+               </effect></Label>
             <HBox prefHeight="13.0" prefWidth="566.0">
                <children>
-                  <Label text="Introduce el número total de descargas">
+                  <Label text="Introduce número de descargas" textFill="WHITE">
                      <HBox.margin>
-                        <Insets left="175.0" right="10.0" top="4.0" />
+                        <Insets left="180.0" right="10.0" top="4.0" />
                      </HBox.margin>
+                     <font>
+                        <Font name="Gadugi Bold" size="14.0" />
+                     </font>
+                     <effect>
+                        <DropShadow color="#f8f8f8" />
+                     </effect>
                   </Label>
-                  <TextField fx:id="tfNumDownloads" prefHeight="25.0" prefWidth="44.0" />
+                  <TextField fx:id="tfNumDownloads" alignment="CENTER" prefHeight="25.0" prefWidth="44.0" style="-fx-text-fill: #c2185b;">
+                     <font>
+                        <Font name="Gadugi Bold" size="14.0" />
+                     </font></TextField>
                </children>
                <VBox.margin>
                   <Insets top="15.0" />
                </VBox.margin>
             </HBox>
-            <HBox prefHeight="47.0" prefWidth="463.0">
+            <HBox prefHeight="48.0" prefWidth="673.0">
                <children>
-                  <Label fx:id="lbURL" text="URL">
+                  <Label fx:id="lbURL" text="Selecciona Directorio Descarga" textFill="WHITE">
                      <HBox.margin>
-                        <Insets left="225.0" top="5.0" />
+                        <Insets left="175.0" top="10.0" />
                      </HBox.margin>
+                     <font>
+                        <Font name="Gadugi Bold" size="14.0" />
+                     </font>
+                     <effect>
+                        <DropShadow color="WHITE" />
+                     </effect>
                   </Label>
-                  <Button fx:id="btSetRoute" mnemonicParsing="false" onAction="#setRoute" text="Set Route">
+                  <Button fx:id="btSetRoute" mnemonicParsing="false" onAction="#setRoute" style="-fx-background-color: #ad1457;" text="Set Route" textFill="WHITE">
                      <HBox.margin>
-                        <Insets left="20.0" />
+                        <Insets left="20.0" top="5.0" />
                      </HBox.margin>
+                     <font>
+                        <Font name="Gadugi Bold" size="14.0" />
+                     </font>
+                     <effect>
+                        <DropShadow color="#eeeeee">
+                           <input>
+                              <InnerShadow />
+                           </input>
+                        </DropShadow>
+                     </effect>
                   </Button>
                </children>
                <VBox.margin>
                   <Insets top="20.0" />
                </VBox.margin>
             </HBox>
-            <Label fx:id="lbRoute" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="563.0">
+            <Label fx:id="lbRoute" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="563.0" textFill="#ff6464">
                <VBox.margin>
-                  <Insets top="10.0" />
+                  <Insets left="50.0" top="10.0" />
                </VBox.margin>
+               <font>
+                  <Font name="Gadugi Bold" size="13.0" />
+               </font>
+               <effect>
+                  <DropShadow color="WHITE" height="83.27" radius="29.2725" spread="0.16" width="35.82" />
+               </effect>
             </Label>
-            <TextField fx:id="tfURL" promptText="Insert URL...">
+            <TextField fx:id="tfURL" prefHeight="25.0" prefWidth="565.0" promptText="Insert URL...">
                <VBox.margin>
-                  <Insets top="10.0" />
+                  <Insets left="100.0" right="100.0" top="10.0" />
                </VBox.margin>
+               <font>
+                  <Font name="Gadugi Bold" size="14.0" />
+               </font>
+               <effect>
+                  <DropShadow color="WHITE" height="26.69" radius="9.88" width="14.83">
+                     <input>
+                        <InnerShadow />
+                     </input>
+                  </DropShadow>
+               </effect>
             </TextField>
             <HBox fx:id="hbButtons" prefHeight="28.0" prefWidth="566.0">
                <children>
-                  <Button fx:id="btDownload" mnemonicParsing="false" onAction="#launchDownload" text="Download">
+                  <Button fx:id="btDownload" mnemonicParsing="false" onAction="#launchDownload" style="-fx-background-color: #00695c;" text="Download" textFill="WHITE">
                      <HBox.margin>
-                        <Insets left="175.0" />
+                        <Insets left="215.0" />
                      </HBox.margin>
+                     <font>
+                        <Font name="Gadugi Bold" size="14.0" />
+                     </font>
+                     <effect>
+                        <DropShadow color="WHITE">
+                           <input>
+                              <InnerShadow />
+                           </input>
+                        </DropShadow>
+                     </effect>
                   </Button>
-                  <Button fx:id="btStopAll" mnemonicParsing="false" onAction="#stopAllDownloads" text="Stop All">
+                  <Button fx:id="btClear" mnemonicParsing="false" onAction="#clearDownloads" style="-fx-background-color: #00695c;" text="Clear" textFill="WHITE">
                      <HBox.margin>
                         <Insets left="10.0" />
                      </HBox.margin>
+                     <font>
+                        <Font name="Gadugi Bold" size="14.0" />
+                     </font>
+                     <effect>
+                        <DropShadow color="WHITE">
+                           <input>
+                              <InnerShadow color="#030303" />
+                           </input>
+                        </DropShadow>
+                     </effect>
                   </Button>
-                  <Button fx:id="btClear" mnemonicParsing="false" onAction="#clearDownloads" text="Clear">
+                  <Button fx:id="btStopAll" mnemonicParsing="false" onAction="#stopAllDownloads" style="-fx-background-color: #ad1457;" text="Stop All" textFill="WHITE">
                      <HBox.margin>
                         <Insets left="10.0" />
                      </HBox.margin>
+                     <font>
+                        <Font name="Gadugi Bold" size="14.0" />
+                     </font>
+                     <effect>
+                        <DropShadow color="WHITE">
+                           <input>
+                              <InnerShadow />
+                           </input>
+                        </DropShadow>
+                     </effect>
                   </Button>
                </children>
                <VBox.margin>
                   <Insets top="10.0" />
                </VBox.margin>
             </HBox>
-            <VBox fx:id="vbPanelDownloader" prefHeight="335.0" prefWidth="566.0" />
+            <TextArea fx:id="taLog" prefHeight="200.0" prefWidth="200.0" />
+            <VBox fx:id="vbPanelDownloader" alignment="CENTER" prefHeight="462.0" prefWidth="673.0" />
          </children>
-         <padding>
-            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
-         </padding>
       </VBox>
    </content>
 </ScrollPane>

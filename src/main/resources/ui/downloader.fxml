@@ -6,31 +6,68 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ProgressBar?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<VBox fx:id="vbPanel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="225.0" prefWidth="423.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<VBox fx:id="vbPanel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <HBox prefHeight="14.0" prefWidth="383.0">
          <children>
-            <Label fx:id="lbDownload" text="Download" />
-            <CheckBox fx:id="chSelectDir" mnemonicParsing="false" text="Choose Directory">
+            <Label fx:id="lbDownload" prefHeight="20.0" prefWidth="156.0" text="Download" textFill="WHITE">
+               <font>
+                  <Font name="Gadugi Bold" size="14.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#00f548" height="9.0" radius="4.0" spread="0.31" width="9.0" />
+               </effect></Label>
+            <CheckBox fx:id="chSelectDir" mnemonicParsing="false" prefHeight="20.0" prefWidth="196.0" text="Choose Directory" textFill="WHITE">
                <HBox.margin>
-                  <Insets left="75.0" />
+                  <Insets left="10.0" />
                </HBox.margin>
+               <font>
+                  <Font name="Gadugi Bold" size="14.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#29ff00" height="9.0" radius="4.0" spread="0.31" width="9.0" />
+               </effect>
             </CheckBox>
+            <Label fx:id="lbStatusRoute" prefHeight="20.0" prefWidth="302.0" textFill="#ff0707">
+               <HBox.margin>
+                  <Insets left="50.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Gadugi Bold" size="14.0" />
+               </font>
+            </Label>
          </children>
       </HBox>
-      <Label text="File Name">
-         <VBox.margin>
-            <Insets left="160.0" top="10.0" />
-         </VBox.margin>
-      </Label>
-      <TextField fx:id="tfNameFile">
+      <Label fx:id="lbStatusFile" prefHeight="17.0" prefWidth="414.0">
          <VBox.margin>
             <Insets top="10.0" />
          </VBox.margin>
-      </TextField>
+      </Label>
+      <HBox prefHeight="24.0" prefWidth="383.0">
+         <children>
+            <Label text="File Name">
+               <HBox.margin>
+                  <Insets left="50.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="tfNameFile" prefHeight="27.0" prefWidth="240.0">
+               <font>
+                  <Font name="Calibri Bold" size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="15.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </HBox>
       <Label text="URL Name">
          <VBox.margin>
             <Insets left="160.0" top="10.0" />
