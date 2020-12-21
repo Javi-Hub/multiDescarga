@@ -11,6 +11,8 @@ import javafx.scene.control.ScrollPane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import javafx.util.Duration;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.io.IOException;
 import java.net.URL;
@@ -23,9 +25,11 @@ import java.util.ResourceBundle;
 public class SplashScreenController implements Initializable {
 
     public VBox vbSplash;
+    private static final Logger LOGGER = LogManager.getLogger(SplashScreenController.class);
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+        LOGGER.trace("Mostranto SplashScreen");
         FadeTransition transition = new FadeTransition(Duration.millis(3000), vbSplash);
         transition.setFromValue(1.0);
         transition.setToValue(1.0);

@@ -6,6 +6,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
@@ -13,14 +14,14 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.VBox;
 import javafx.stage.DirectoryChooser;
 import javafx.stage.FileChooser;
+import javafx.stage.Stage;
+import javafx.stage.Window;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.io.*;
 import java.net.URL;
-import java.nio.Buffer;
 import java.nio.file.Files;
-import java.security.cert.TrustAnchor;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.ResourceBundle;
@@ -36,10 +37,11 @@ public class AppController implements Initializable {
     public Button btStopAll, btClear;
     public Label lbRoute;
     public TextArea taLog;
+    public DownloadController dController;
 
     private List<DownloadController> downloads;
     private static final Logger LOGGER = LogManager.getLogger(AppController.class);
-    private int contador = 0;
+    public int contador = 0;
 
     public AppController(){
         downloads = new ArrayList<>();
@@ -50,12 +52,11 @@ public class AppController implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
         btClear.setDisable(true);
         btStopAll.setDisable(true);
-        readLog();
     }
 
     @FXML
     public void launchDownload(ActionEvent event){
-
+            LOGGER.trace("Ventana hijo download desplegada");
             if (tfURL.getText().equals("")){
                 AlertUtils.mostrarError("Debe ingresar una url de descarga");
                 return;
@@ -71,6 +72,7 @@ public class AppController implements Initializable {
 
     @FXML
     public void launchDownload(String url){
+        LOGGER.trace("Layout Download creado");
         try {
             boolean route = false;
             contador++;
@@ -122,13 +124,16 @@ public class AppController implements Initializable {
         LOGGER.trace("Selección ruta todas las descargas (" + lbRoute.getText() + ")");
         DirectoryChooser directoryChooser = new DirectoryChooser();
         File fileDir = directoryChooser.showDialog(null);
-        String dir = fileDir.getAbsolutePath();
-        lbRoute.setText(dir);
+        if (fileDir != null){
+            String dir = fileDir.getAbsolutePath();
+            lbRoute.setText(dir);
+        }
+
     }
 
     @FXML
     public void readDLC(){
-        LOGGER.trace("Subir archivo urls");
+        LOGGER.trace("Subir archivo con urls de descarga");
         FileChooser fileChooser = new FileChooser();
         File file = fileChooser.showOpenDialog(null);
         try {
@@ -143,6 +148,19 @@ public class AppController implements Initializable {
     }
 
     @FXML
+    public void readLogger(){
+        LOGGER.trace("Mostrar archivo .log en TextArea");
+        taLog.setText("");
+        readLog();
+    }
+
+    @FXML
+    public void clearLogger(){
+        LOGGER.trace("Borrar TextArea ");
+        taLog.setText("");
+    }
+
+
     public void readLog() {
         try {
             File file = new File("multiDescarga.log");

@@ -7,6 +7,7 @@
 <?import javafx.scene.control.ProgressBar?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
@@ -22,7 +23,15 @@
                <effect>
                   <DropShadow color="#00f548" height="9.0" radius="4.0" spread="0.31" width="9.0" />
                </effect></Label>
-            <CheckBox fx:id="chSelectDir" mnemonicParsing="false" prefHeight="20.0" prefWidth="196.0" text="Choose Directory" textFill="WHITE">
+            <Label fx:id="lbStatusRoute" alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="20.0" prefWidth="302.0" textFill="#ff0707">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Gadugi Bold" size="14.0" />
+               </font>
+            </Label>
+            <CheckBox fx:id="chSelectDir" mnemonicParsing="false" prefHeight="20.0" prefWidth="196.0" text="Elegir ruta" textFill="WHITE">
                <HBox.margin>
                   <Insets left="10.0" />
                </HBox.margin>
@@ -33,75 +42,134 @@
                   <DropShadow color="#29ff00" height="9.0" radius="4.0" spread="0.31" width="9.0" />
                </effect>
             </CheckBox>
-            <Label fx:id="lbStatusRoute" prefHeight="20.0" prefWidth="302.0" textFill="#ff0707">
+         </children>
+      </HBox>
+      <Label fx:id="lbStatusFile" contentDisplay="CENTER" prefHeight="17.0" prefWidth="241.0" textFill="#c93066">
+         <VBox.margin>
+            <Insets left="230.0" top="10.0" />
+         </VBox.margin>
+         <font>
+            <Font name="Gadugi Bold" size="14.0" />
+         </font>
+         <effect>
+            <DropShadow color="WHITE" />
+         </effect>
+      </Label>
+      <HBox prefHeight="24.0" prefWidth="383.0">
+         <children>
+            <Label text="File Name" textFill="WHITE">
                <HBox.margin>
-                  <Insets left="50.0" />
+                  <Insets left="150.0" top="5.0" />
                </HBox.margin>
                <font>
                   <Font name="Gadugi Bold" size="14.0" />
                </font>
+               <effect>
+                  <DropShadow color="WHITE" />
+               </effect>
             </Label>
-         </children>
-      </HBox>
-      <Label fx:id="lbStatusFile" prefHeight="17.0" prefWidth="414.0">
-         <VBox.margin>
-            <Insets top="10.0" />
-         </VBox.margin>
-      </Label>
-      <HBox prefHeight="24.0" prefWidth="383.0">
-         <children>
-            <Label text="File Name">
-               <HBox.margin>
-                  <Insets left="50.0" top="5.0" />
-               </HBox.margin>
-            </Label>
-            <TextField fx:id="tfNameFile" prefHeight="27.0" prefWidth="240.0">
+            <TextField fx:id="tfNameFile" alignment="CENTER" prefHeight="27.0" prefWidth="240.0">
                <font>
                   <Font name="Calibri Bold" size="14.0" />
                </font>
                <HBox.margin>
                   <Insets left="15.0" />
                </HBox.margin>
+               <effect>
+                  <DropShadow color="WHITE">
+                     <input>
+                        <InnerShadow />
+                     </input>
+                  </DropShadow>
+               </effect>
             </TextField>
          </children>
          <VBox.margin>
             <Insets top="10.0" />
          </VBox.margin>
       </HBox>
-      <Label text="URL Name">
+      <Label text="URL Name" textFill="WHITE">
          <VBox.margin>
-            <Insets left="160.0" top="10.0" />
+            <Insets left="230.0" top="10.0" />
          </VBox.margin>
+         <font>
+            <Font name="Gadugi Bold" size="14.0" />
+         </font>
+         <effect>
+            <DropShadow color="WHITE" />
+         </effect>
       </Label>
-      <TextField fx:id="tfNameURL">
+      <TextField fx:id="tfNameURL" alignment="CENTER">
          <VBox.margin>
             <Insets top="10.0" />
          </VBox.margin>
+         <font>
+            <Font name="Gadugi Bold" size="14.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
       </TextField>
       <HBox prefHeight="24.0" prefWidth="383.0">
          <VBox.margin>
             <Insets top="10.0" />
          </VBox.margin>
          <children>
-            <ProgressBar fx:id="pbProgress" prefHeight="25.0" prefWidth="200.0" progress="0.0" />
-            <Button fx:id="btStart" mnemonicParsing="false" onAction="#start" text="Start">
+            <ProgressBar fx:id="pbProgress" prefHeight="25.0" prefWidth="361.0" progress="0.0">
+               <HBox.margin>
+                  <Insets top="3.0" />
+               </HBox.margin></ProgressBar>
+            <Button fx:id="btStart" mnemonicParsing="false" onAction="#start" style="-fx-background-color: #00695c;" text="Start" textFill="WHITE">
                <HBox.margin>
                   <Insets left="10.0" />
-               </HBox.margin></Button>
-            <Button fx:id="btStop" mnemonicParsing="false" onAction="#stop" text="Stop">
+               </HBox.margin>
+               <font>
+                  <Font name="Gadugi Bold" size="14.0" />
+               </font>
+               <effect>
+                  <DropShadow color="WHITE">
+                     <input>
+                        <InnerShadow />
+                     </input>
+                  </DropShadow>
+               </effect></Button>
+            <Button fx:id="btStop" mnemonicParsing="false" onAction="#stop" style="-fx-background-color: #ad1457;" text="Stop" textFill="WHITE">
                <HBox.margin>
                   <Insets left="10.0" />
-               </HBox.margin></Button>
-            <Button fx:id="btCancel" mnemonicParsing="false" onAction="#cancel" text="Cancel">
+               </HBox.margin>
+               <font>
+                  <Font name="Gadugi Bold" size="14.0" />
+               </font>
+               <effect>
+                  <DropShadow color="WHITE">
+                     <input>
+                        <InnerShadow />
+                     </input>
+                  </DropShadow>
+               </effect></Button>
+            <Button fx:id="btCancel" mnemonicParsing="false" onAction="#cancel" style="-fx-background-color: #F44336;" text="Cancel" textFill="WHITE">
                <HBox.margin>
                   <Insets left="10.0" />
-               </HBox.margin></Button>
+               </HBox.margin>
+               <font>
+                  <Font name="Gadugi Bold" size="14.0" />
+               </font>
+               <effect>
+                  <DropShadow color="WHITE">
+                     <input>
+                        <InnerShadow />
+                     </input>
+                  </DropShadow>
+               </effect></Button>
          </children>
       </HBox>
-      <Label fx:id="lbStatus" prefHeight="17.0" prefWidth="378.0">
+      <Label fx:id="lbStatus" prefHeight="17.0" prefWidth="360.0" textFill="WHITE">
          <VBox.margin>
             <Insets top="5.0" />
          </VBox.margin>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
       </Label>
    </children>
    <padding>

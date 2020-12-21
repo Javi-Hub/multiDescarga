@@ -13,8 +13,17 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.nio.file.FileAlreadyExistsException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Optional;
 import java.util.ResourceBundle;
 
 /**
@@ -30,12 +39,16 @@ public class DownloadController implements Initializable {
     public VBox vbPanel;
     public CheckBox chSelectDir;
     public AppController app;
+    public List<File> files;
 
     private String urlText;
     private String directorio;
     private DownloadTask downloadTask;
     private String name;
     private boolean route;
+    private Optional<ButtonType> action;
+    private File file;
+    private FileInputStream downloadFile;
     private static final Logger LOGGER = LogManager.getLogger(DownloadController.class);
 
     public DownloadController(String urlText, String directorio, boolean route, String name){
@@ -52,19 +65,24 @@ public class DownloadController implements Initializable {
         // Mostrar en el TextField de downloadTask la url pasada por parametro
         tfNameURL.setText(this.urlText);
         lbDownload.setText(this.name);
+        btStop.setDisable(true);
         lbStatusFile.setText("Introduce el nombre del archivo");
-        if (route) lbStatusRoute.setText("Introduce la ruta de descarga");
+        if (route) lbStatusRoute.setText("Introduce la ruta de descarga ->");
     }
 
     @FXML
     public void start(ActionEvent event) {
-        File file = null;
+        btStart.setDisable(true);
+        btStop.setDisable(false);
+        btCancel.setDisable(true);
+        //File file = null;
+        file = null;
 
         try{
             if (!chSelectDir.isSelected() && directorio.equals("")){
                 LOGGER.warn("Directorio (" + directorio + ") no introducido");
                 AlertUtils.mostrarError("Debe seleccionar la ruta");
-            } else if (tfNameFile.getText().equals("")){
+            } else if (tfNameFile.getText().equals("") && !chSelectDir.isSelected()){
                 LOGGER.warn("Nombre archivo no introducido");
                 AlertUtils.mostrarError("Debe asignar un nombre al archivo");
             } else if (!chSelectDir.isSelected()){
@@ -126,13 +144,19 @@ public class DownloadController implements Initializable {
     @FXML
     public void stop(){
         LOGGER.trace("Descarga (" + urlText + ") detenida");
-            downloadTask.cancel();
+        btStart.setDisable(false);
+        btStop.setDisable(true);
+        btCancel.setDisable(false);
+            if (downloadTask != null) downloadTask.cancel();
     }
 
 
     @FXML
-    public void cancel(ActionEvent event){
-        vbPanel.getChildren().clear();
+    public void cancel(ActionEvent event) {
+        LOGGER.trace("Download hijo eliminado");
+        action = AlertUtils.mostrarConfirmacion("Desea borrar la descarga");
+        if (action.get() == ButtonType.OK){
+            vbPanel.getChildren().clear();
+        }
     }
-
 }

@@ -7,6 +7,7 @@ import org.apache.logging.log4j.Logger;
 
 import java.io.BufferedInputStream;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -31,13 +32,11 @@ public class DownloadTask extends Task<Integer> {
     protected Integer call() throws Exception {
         LOGGER.trace("Descarga (" + url.toString() + ") iniciada");
         updateMessage("Conectando con el servidor . . .");
-
         URLConnection urlConnection = url.openConnection();
 
         // Para capturar el tamaño del fichero
         double fileSize = urlConnection.getContentLength();
-        double fileSizeMB = fileSize / Math.pow(1024, 2);
-
+        double fileSizeMB = (fileSize / 1048576);
         // Descargar el fichero de la URL
         BufferedInputStream input = new BufferedInputStream(url.openStream());
         FileOutputStream fileOutputStream = new FileOutputStream(file);
@@ -48,6 +47,7 @@ public class DownloadTask extends Task<Integer> {
         double downloadProgressMB = 0;
 
         while ((bytesRead = input.read(dataBuffer, 0, 1024)) != -1) {
+
             downloadProgress = ((double) totalRead / fileSize);
             downloadProgressMB = ((double) totalRead / fileSizeMB);
 
@@ -56,21 +56,19 @@ public class DownloadTask extends Task<Integer> {
 
             // (Como lleva al progreso, hasta el 1 que es el final de la barra de progreso)
             updateProgress(downloadProgress, 1);
-            updateMessage((int) (downloadProgress * 100) + " % - " + (int) downloadProgressMB + "MB de " + fileSizeMB + "MB");
+            updateMessage((int) (downloadProgress * 100) + " % - " + (int) downloadProgressMB / 10000 + "MB de " + (int) fileSizeMB + "MB");
 
             if (isCancelled()){
                 LOGGER.trace("Descarga (" + url.toString() + ") cancelada");
                 return null;
+
             }
         }
 
         // Para parar la barra de estado
         updateProgress(1, 1);
-        updateMessage("100 % - " + (int) (downloadProgressMB) + " MB ");
+        updateMessage("100 % - " + (int) fileSizeMB + " MB ");
         LOGGER.trace("Descarga (" + url.toString() + ") finalizada");
         return null;
     }
 }
-
-// TODO Logger rotar por dia
-// TODO Diseño gráfico Aplicación

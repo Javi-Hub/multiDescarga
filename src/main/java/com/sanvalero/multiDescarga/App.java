@@ -9,6 +9,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 /**
  * Creado por @author: Javier
@@ -32,6 +33,7 @@ public class App extends Application {
         stage.setScene(scene);
         stage.show();*/
 
+        stage.initStyle(StageStyle.UNDECORATED);
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(R.getUI("splashScreen.fxml"));
         loader.setController(new SplashScreenController());
