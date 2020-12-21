@@ -101,17 +101,6 @@ public class DownloadController implements Initializable {
             pbProgress.progressProperty().unbind();
             pbProgress.progressProperty().bind(downloadTask.progressProperty());
 
-            /*downloadTask.stateProperty().addListener(new ChangeListener<Worker.State>() {
-                @Override
-                public void changed(ObservableValue<? extends Worker.State> observableValue, Worker.State oldState, Worker.State newState) {
-                    if (newState == Worker.State.SUCCEEDED){
-                        Alert alert = new Alert(Alert.AlertType.INFORMATION);
-                        alert.setContentText("La descarga ha terminado");
-                        alert.show();
-                    }
-                }
-            });*/
-
             // Que tiene que hacer el metodo cuando cambie algo del DownloadTask
             downloadTask.stateProperty().addListener((observableValue, oldState, newState) -> {
                 if (newState == Worker.State.SUCCEEDED){
@@ -121,13 +110,6 @@ public class DownloadController implements Initializable {
                     alert.show();
                 }
             });
-
-            /*downloadTask.messageProperty().addListener(new ChangeListener<String>() {
-                @Override
-                public void changed(ObservableValue<? extends String> observableValue, String oldValue, String newValue) {
-                    lbStatus.setText(newValue);
-                }
-            });*/
 
             // El mensaje de texto que vaya generando la tarea lo muestro en el lbStatus
             downloadTask.messageProperty().addListener((observableValue, oldValue, newValue) -> lbStatus.setText(newValue));
@@ -141,6 +123,7 @@ public class DownloadController implements Initializable {
 
     }
 
+    //Parar la descarga
     @FXML
     public void stop(){
         LOGGER.trace("Descarga (" + urlText + ") detenida");
@@ -150,7 +133,7 @@ public class DownloadController implements Initializable {
             if (downloadTask != null) downloadTask.cancel();
     }
 
-
+    //Borrar la descarga
     @FXML
     public void cancel(ActionEvent event) {
         LOGGER.trace("Download hijo eliminado");
